@@ -1,0 +1,14 @@
+ID,Module,Regression Check,Priority,Status
+REG-001,Auth,Register new customer,High,Not Run
+REG-002,Auth,Login customer,High,Not Run
+REG-003,Auth,Invalid login error,High,Not Run
+REG-004,Products,Product list loads,High,Not Run
+REG-005,Products,Product details load,High,Not Run
+REG-006,Cart,Add product to cart,High,Not Run
+REG-007,Cart,Update cart quantity,High,Not Run
+REG-008,Cart,Delete cart item,Medium,Not Run
+REG-009,Checkout,Create order,High,Not Run
+REG-010,Orders,Order history loads,High,Not Run
+REG-011,Admin,Admin order status update,High,Not Run
+REG-012,Security,Unauthorized access blocked,High,Not Run
+REG-013,Database,Order total matches item total,High,Not Run

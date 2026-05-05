@@ -1,0 +1,6 @@
+Bug ID,Title,Module,Severity,Priority,Status
+BUG-001,Cart total does not update after quantity is changed from 1 to 2,Cart,High,High,Example
+BUG-002,Duplicate email registration shows unclear error message,Authentication,Medium,High,Example
+BUG-003,Checkout API allows order creation when cart is empty,Checkout/API,Critical,High,Example
+BUG-004,Order history does not display latest order immediately after checkout,Orders,High,Medium,Example
+BUG-005,Admin order status update returns success but database status remains unchanged,Admin/Database,High,High,Example

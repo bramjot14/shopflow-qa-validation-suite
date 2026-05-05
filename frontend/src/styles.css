@@ -1,0 +1,27 @@
+body {
+  background: #f7f8fb;
+}
+
+.card {
+  border: 0;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.navbar-brand {
+  font-weight: 700;
+}
+
+.page-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.product-img {
+  height: 180px;
+  object-fit: cover;
+  background: #e9ecef;
+}
+
+.badge-status {
+  font-size: 0.85rem;
+}

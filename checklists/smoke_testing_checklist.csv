@@ -1,0 +1,9 @@
+ID,Area,Check,Expected Result,Status
+SM-001,Backend,GET /api/health,API returns status ok,Not Run
+SM-002,Frontend,Open localhost:5173,Home page loads,Not Run
+SM-003,Login,Login customer,Products page opens,Not Run
+SM-004,Products,Open Products page,Products display,Not Run
+SM-005,Cart,Add product to cart,Product appears in cart,Not Run
+SM-006,Checkout,Place valid order,Order created,Not Run
+SM-007,Orders,View order history,Latest order appears,Not Run
+SM-008,Admin,Admin updates order status,Status updated,Not Run
