@@ -1,7 +1,7 @@
 ````markdown
 # ShopFlow QA Validation Suite
 
-Live Demo: https://your-frontend-link.onrender.com  
+Live Demo: https://shopflow-qa-frontend.onrender.com
 
 ShopFlow QA Validation Suite is a full-stack e-commerce QA portfolio project built to demonstrate practical software testing skills for **Junior QA Engineer, QA Tester, Software Tester, Manual QA Tester, Software QA Engineer, and Junior QA Automation Engineer** roles.
 
@@ -24,9 +24,9 @@ The project includes a real e-commerce demo application with a **React frontend*
 
 | Service | Link |
 |---|---|
-| Frontend Live Demo | https://your-frontend-link.onrender.com |
-| Backend Health Check | https://your-backend-link.onrender.com/api/health |
-| Products API | https://your-backend-link.onrender.com/api/products |
+| Frontend Live Demo | https://shopflow-qa-frontend.onrender.com |
+| Backend Health Check | https://shopflow-qa-backend.onrender.com/api/health |
+| Products API | https://shopflow-qa-backend.onrender.com/api/products |
 
 The frontend is deployed as a Render Static Site, and the backend is deployed as a Render Web Service connected to a Render PostgreSQL database.
 
