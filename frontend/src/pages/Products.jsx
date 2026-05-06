@@ -26,7 +26,15 @@ export default function Products() {
         {products.map((product) => (
           <div className="col-md-4" key={product.id}>
             <div className="card h-100">
-              <img src={product.image_url} className="card-img-top product-img" alt={product.name} />
+              <img
+  src={product.image_url}
+  alt={product.name}
+  className="card-img-top bg-light p-3"
+  style={{
+    height: "220px",
+    objectFit: "contain"
+  }}
+/>
               <div className="card-body d-flex flex-column">
                 <h5 className="card-title">{product.name}</h5>
                 <p className="card-text text-muted">${Number(product.price).toFixed(2)} · Stock: {product.stock}</p>
