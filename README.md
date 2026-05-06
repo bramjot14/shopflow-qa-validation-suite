@@ -230,7 +230,7 @@ After running the database setup script, use these accounts.
 ### Customer Account
 
 ```text
-Email: customer@example.com
+Email: testcustomer@example.com
 Password: Password123!
 ```
 
