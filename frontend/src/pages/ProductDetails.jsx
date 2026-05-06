@@ -41,7 +41,15 @@ export default function ProductDetails() {
     <div className="card p-4">
       <div className="row">
         <div className="col-md-5">
-          <img src={product.image_url} className="img-fluid rounded" alt={product.name} />
+          <img
+  src={product.image_url}
+  alt={product.name}
+  className="img-fluid bg-light p-3 rounded"
+  style={{
+    maxHeight: "420px",
+    objectFit: "contain"
+  }}
+/>
         </div>
         <div className="col-md-7">
           <h2>{product.name}</h2>
