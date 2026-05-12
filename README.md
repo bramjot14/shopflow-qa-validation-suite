@@ -120,34 +120,65 @@ This project demonstrates end-to-end QA work across UI, API, database, and autom
 
 ## Screenshots
 
-Screenshots can be added here to make the project more visual for recruiters.
+### Home Page
 
-Suggested screenshots:
+<img width="1918" height="367" alt="home-page" src="https://github.com/user-attachments/assets/0775c80a-b43f-4855-bea3-0902e4337403" />
 
-- Home page
-- Products page
-- Product details page
-- Cart page
-- Checkout page
-- Order history page
-- Admin orders page
-- Postman test results
-- pytest test results
-- SQL validation output
+---
 
-Example:
+### Products Page
 
-```text
-screenshots/
-├── home-page.png
-├── products-page.png
-├── cart-page.png
-├── checkout-page.png
-├── admin-orders-page.png
-├── postman-results.png
-├── pytest-results.png
-└── sql-validation.png
-```
+<img width="1918" height="912" alt="products-page" src="https://github.com/user-attachments/assets/e4c46131-b514-48f1-9e7a-fcff3badd35f" />
+
+---
+
+### Product Details Page
+
+<img width="1918" height="587" alt="product-detail-page" src="https://github.com/user-attachments/assets/d90ba1ca-16a4-4d5a-a54a-e2ac29af946c" />
+
+---
+
+### Cart Page
+
+<img width="1918" height="392" alt="cart-page" src="https://github.com/user-attachments/assets/c859c10b-575a-48a7-aa1a-729ba9c4af85" />
+
+---
+
+### Checkout Page
+
+<img width="1918" height="431" alt="checkout-page" src="https://github.com/user-attachments/assets/ec646b3b-7f2c-4d14-878b-236a4115c9a0" />
+
+---
+
+### Order History Page
+
+<img width="1918" height="342" alt="order-history-page" src="https://github.com/user-attachments/assets/9687700f-7285-4b27-b697-5cc0f4e9f7e5" />
+
+---
+
+### Admin Orders Page
+
+<img width="1918" height="460" alt="admin-orders-page" src="https://github.com/user-attachments/assets/894bd235-f757-456a-962b-a4b3481f442c" />
+
+---
+
+### Postman API Test Results
+
+<img width="1888" height="968" alt="postman-api-results" src="https://github.com/user-attachments/assets/8cdc91c3-6c7a-43aa-9ed8-ae6dc312c86c" />
+
+---
+
+### QA Automation Results in VS Code
+
+<img width="1500" height="895" alt="qa-automation-results-vscode" src="https://github.com/user-attachments/assets/95461fea-c011-4797-8f32-e85658c03555" />
+
+---
+
+### SQL Database Validation
+
+<img width="1048" height="792" alt="sql-database-validation" src="https://github.com/user-attachments/assets/65fd0711-a117-4212-b374-315472dceb13" />
+
+
 ````
 
 ---
