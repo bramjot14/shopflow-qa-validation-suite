@@ -1,7 +1,8 @@
-````markdown
 # ShopFlow QA Validation Suite
 
-Live Demo: https://shopflow-qa-frontend.onrender.com
+**Live Demo:** https://shopflow-qa-frontend.onrender.com  
+**Backend Health Check:** https://shopflow-qa-backend.onrender.com/api/health  
+**Products API:** https://shopflow-qa-backend.onrender.com/api/products  
 
 ShopFlow QA Validation Suite is a full-stack e-commerce QA portfolio project built to demonstrate practical software testing skills for **Junior QA Engineer, QA Tester, Software Tester, Manual QA Tester, Software QA Engineer, and Junior QA Automation Engineer** roles.
 
@@ -14,9 +15,9 @@ The project includes a real e-commerce demo application with a **React frontend*
 - Built and tested a real e-commerce workflow: registration, login, products, product details, cart, checkout, order history, and admin order status.
 - Created QA documentation including test plan, test scenarios, test cases, bug reports, smoke checklist, regression checklist, and release notes.
 - Validated REST APIs using Postman with environment variables and Bearer Token authentication.
-- Verified backend data using PostgreSQL SQL queries across users, products, carts, cart_items, orders, and order_items tables.
+- Verified backend data using PostgreSQL SQL queries across users, products, carts, cart items, orders, and order items.
 - Added pytest API automation for repeatable checks such as health check, login, products, cart, checkout, unauthorized access, and admin status update.
-- Organized the project using Git/GitHub-friendly structure for portfolio and interview demonstration.
+- Organized the project using a GitHub-friendly structure for portfolio and interview demonstration.
 
 ---
 
@@ -28,21 +29,23 @@ The project includes a real e-commerce demo application with a **React frontend*
 | Backend Health Check | https://shopflow-qa-backend.onrender.com/api/health |
 | Products API | https://shopflow-qa-backend.onrender.com/api/products |
 
-The frontend is deployed as a Render Static Site, and the backend is deployed as a Render Web Service connected to a Render PostgreSQL database.
+The frontend is deployed as a **Render Static Site**.  
+The backend is deployed as a **Render Web Service** connected to a **Render PostgreSQL database**.
 
 ---
 
 ## Tech Stack
 
-| Area             | Technologies                                                                             |
-| ---------------- | ---------------------------------------------------------------------------------------- |
-| Frontend         | React, React Router, Axios, Bootstrap, Vite                                              |
-| Backend          | Node.js, Express.js, JWT, bcryptjs, cors, dotenv, pg                                     |
-| Database         | PostgreSQL, SQL                                                                          |
-| API Testing      | Postman                                                                                  |
-| Automation       | Python, pytest, requests                                                                 |
+| Area | Technologies |
+|---|---|
+| Frontend | React, React Router, Axios, Bootstrap, Vite |
+| Backend | Node.js, Express.js, JWT, bcryptjs, cors, dotenv, pg |
+| Database | PostgreSQL, SQL |
+| API Testing | Postman |
+| Automation | Python, pytest, requests |
 | QA Documentation | Test Plan, Test Cases, Bug Reports, Smoke Checklist, Regression Checklist, Release Notes |
-| Version Control  | Git, GitHub                                                                              |
+| Version Control | Git, GitHub |
+| Deployment | Render |
 
 ---
 
@@ -83,17 +86,17 @@ ShopFlow is a small e-commerce demo application with customer and admin workflow
 
 This project demonstrates end-to-end QA work across UI, API, database, and automation layers.
 
-| QA Area             | What Was Covered                                                               |
-| ------------------- | ------------------------------------------------------------------------------ |
-| Manual Testing      | Test scenarios and test cases for customer/admin workflows                     |
-| Functional Testing  | Login, products, cart, checkout, orders, admin status update                   |
-| API Testing         | Auth, products, cart, orders, and admin endpoints using Postman                |
-| Database Validation | SQL checks for users, products, cart items, orders, and order_items            |
-| Negative Testing    | Invalid login, missing fields, invalid product ID, unauthorized access         |
-| Smoke Testing       | Critical build checks before deeper testing                                    |
-| Regression Testing  | Retesting core workflows after changes                                         |
-| Bug Reporting       | Defects documented with steps, expected/actual results, severity, and priority |
-| Automation          | pytest API tests for repeatable validation                                     |
+| QA Area | What Was Covered |
+|---|---|
+| Manual Testing | Test scenarios and test cases for customer/admin workflows |
+| Functional Testing | Login, products, cart, checkout, orders, admin status update |
+| API Testing | Auth, products, cart, orders, and admin endpoints using Postman |
+| Database Validation | SQL checks for users, products, cart items, orders, and order items |
+| Negative Testing | Invalid login, missing fields, invalid product ID, unauthorized access |
+| Smoke Testing | Critical build checks before deeper testing |
+| Regression Testing | Retesting core workflows after changes |
+| Bug Reporting | Defects documented with steps, expected/actual results, severity, and priority |
+| Automation | pytest API tests for repeatable validation |
 
 ---
 
@@ -178,9 +181,6 @@ This project demonstrates end-to-end QA work across UI, API, database, and autom
 
 <img width="1048" height="792" alt="sql-database-validation" src="https://github.com/user-attachments/assets/65fd0711-a117-4212-b374-315472dceb13" />
 
-
-````
-
 ---
 
 ## Final Folder Structure
@@ -193,6 +193,9 @@ shopflow-qa-validation-suite/
 │   ├── index.html
 │   ├── vite.config.js
 │   ├── .env.example
+│   ├── public/
+│   │   └── images/
+│   │       └── products/
 │   └── src/
 │       ├── App.jsx
 │       ├── main.jsx
@@ -270,8 +273,6 @@ shopflow-qa-validation-suite/
 
 ## Test Credentials
 
-After running the database setup script, use these accounts.
-
 ### Customer Account
 
 ```text
@@ -312,7 +313,7 @@ python --version
 
 ---
 
-## How to Run PostgreSQL Database
+## How to Run PostgreSQL Database Locally
 
 ### Step 1: Create Database
 
@@ -361,7 +362,7 @@ Important: Do not upload your real `.env` file to GitHub. Only upload `.env.exam
 
 ---
 
-## How to Run Backend
+## How to Run Backend Locally
 
 From the `backend/` folder:
 
@@ -394,7 +395,7 @@ Expected response:
 
 ---
 
-## How to Run Frontend
+## How to Run Frontend Locally
 
 Open a new VS Code terminal:
 
@@ -437,7 +438,7 @@ http://localhost:5173
 
 ---
 
-## How to Import Postman Collection
+## How to Import and Run Postman Collection
 
 1. Open Postman.
 2. Click **Import**.
@@ -454,33 +455,33 @@ postman/ShopFlow_QA.postman_environment.json
 ShopFlow Local Environment
 ```
 
-5. Start backend first:
+5. For deployed Render testing, set:
 
-```bash
-cd backend
-npm run dev
+```text
+base_url = https://shopflow-qa-backend.onrender.com/api
 ```
 
 6. Run requests in this order:
 
 ```text
 Health Check
-Register Customer
+Register Customer With Unique Email
 Login Customer
 Get Products
 Get Product Details
+Invalid Product ID Negative Test
 Add Product to Cart
+Get Cart
 Update Cart Item
 Delete Cart Item
 Add Product Again Before Checkout
-Checkout / Create Order
+Checkout Create Order
 Get Order History
 Login Admin
 Admin Get Orders
 Admin Update Order Status
-Negative Login
-Missing Required Fields
-Invalid Product ID
+Negative Login Wrong Password
+Missing Required Fields Register
 Unauthorized Cart Access
 Customer Access Admin Negative Test
 ```
@@ -489,30 +490,22 @@ Customer Access Admin Negative Test
 
 ## Postman Environment Variables
 
-The Postman environment uses these variables:
+| Variable | Purpose |
+|---|---|
+| base_url | Stores API base URL |
+| token | Stores customer login token |
+| admin_token | Stores admin login token |
+| product_id | Stores selected product ID |
+| cart_item_id | Stores cart item ID |
+| order_id | Stores created order ID |
 
-| Variable     | Purpose                     |
-| ------------ | --------------------------- |
-| base_url     | Stores local API URL        |
-| token        | Stores customer login token |
-| admin_token  | Stores admin login token    |
-| product_id   | Stores selected product ID  |
-| cart_item_id | Stores cart item ID         |
-| order_id     | Stores created order ID     |
-
-Example:
-
-```text
-base_url = http://localhost:5000/api
-```
-
-For protected customer requests, use:
+For protected customer requests:
 
 ```text
 Authorization > Bearer Token > {{token}}
 ```
 
-For admin requests, use:
+For admin requests:
 
 ```text
 Authorization > Bearer Token > {{admin_token}}
@@ -522,14 +515,26 @@ Authorization > Bearer Token > {{admin_token}}
 
 ## How to Run pytest API Automation
 
-Start the backend first. Then open a new terminal:
+Start the backend first if testing locally.
+
+### Local Backend
 
 ```bash
 cd automation/pytest_api
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
-pytest
+set BASE_URL=http://localhost:5000/api
+python -m pytest
+```
+
+### Deployed Render Backend
+
+```bash
+cd automation/pytest_api
+venv\Scripts\activate
+set BASE_URL=https://shopflow-qa-backend.onrender.com/api
+python -m pytest
 ```
 
 For macOS/Linux:
@@ -539,13 +544,8 @@ cd automation/pytest_api
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-pytest
-```
-
-Default backend URL:
-
-```text
-http://localhost:5000
+export BASE_URL=https://shopflow-qa-backend.onrender.com/api
+python -m pytest
 ```
 
 The pytest suite covers:
@@ -556,6 +556,8 @@ The pytest suite covers:
 - Product list
 - Product details
 - Add to cart
+- Update cart item
+- Delete cart item
 - Checkout/order creation
 - Order history
 - Unauthorized cart/order access
@@ -576,7 +578,7 @@ Examples of validations included:
 - Confirm registered user exists.
 - Confirm product prices and stock are valid.
 - Confirm cart item is saved correctly.
-- Confirm order and order_items records match after checkout.
+- Confirm order and order items match after checkout.
 - Confirm admin order status update is saved.
 - Compare order total with calculated order item total.
 
@@ -606,20 +608,20 @@ If rows are returned, it means the order total does not match the order item tot
 
 Detailed QA documentation is available in the `docs/` folder.
 
-| File                                | Purpose                       |
-| ----------------------------------- | ----------------------------- |
-| docs/01_QA_Test_Plan.md             | Overall QA test plan          |
-| docs/02_Test_Scenarios.md           | High-level testing scenarios  |
-| docs/03_Test_Cases.md               | Manual test cases             |
-| docs/04_Bug_Reports.md              | Sample bug reports            |
-| docs/05_Smoke_Test_Checklist.md     | Smoke testing checklist       |
-| docs/06_Regression_Checklist.md     | Regression testing checklist  |
-| docs/07_API_Testing_Examples.md     | API testing examples          |
-| docs/08_SQL_Database_Validation.md  | SQL validation examples       |
-| docs/09_Postman_Collection_Guide.md | Postman guide                 |
-| docs/10_Pytest_Automation_Ideas.md  | pytest automation explanation |
-| docs/11_Release_Validation_Notes.md | Release validation notes      |
-| docs/12_Resume_Portfolio_Content.md | Resume and interview content  |
+| File | Purpose |
+|---|---|
+| docs/01_QA_Test_Plan.md | Overall QA test plan |
+| docs/02_Test_Scenarios.md | High-level testing scenarios |
+| docs/03_Test_Cases.md | Manual test cases |
+| docs/04_Bug_Reports.md | Sample bug reports |
+| docs/05_Smoke_Test_Checklist.md | Smoke testing checklist |
+| docs/06_Regression_Checklist.md | Regression testing checklist |
+| docs/07_API_Testing_Examples.md | API testing examples |
+| docs/08_SQL_Database_Validation.md | SQL validation examples |
+| docs/09_Postman_Collection_Guide.md | Postman guide |
+| docs/10_Pytest_Automation_Ideas.md | pytest automation explanation |
+| docs/11_Release_Validation_Notes.md | Release validation notes |
+| docs/12_Resume_Portfolio_Content.md | Resume and interview content |
 
 ---
 
@@ -631,7 +633,7 @@ The project includes realistic bug report examples such as:
 - Duplicate email registration creates unclear error message.
 - Checkout button remains enabled when cart is empty.
 - Order history does not show the latest order after successful checkout.
-- API returns success response while order_items records are missing in the database.
+- API returns success response while order items are missing in the database.
 
 Each bug report includes:
 
@@ -647,52 +649,23 @@ Each bug report includes:
 
 ---
 
+## Resume-Ready Project Section
+
+**ShopFlow QA Validation Suite**  
 **Technologies:** React, Node.js, Express.js, PostgreSQL, SQL, Postman, pytest, Python, Manual Testing, API Testing, Git/GitHub
 
 - Built and tested a full-stack e-commerce demo application covering registration, login, products, cart, checkout, order history, and admin order-status workflows.
 - Created manual test cases, smoke/regression checklists, negative tests, API tests, SQL validation queries, bug reports, and release validation notes using SDLC/STLC practices.
-- Validated REST APIs with Postman and verified backend data using PostgreSQL queries across users, carts, orders, and order_items tables.
+- Validated REST APIs with Postman and verified backend data using PostgreSQL queries across users, carts, orders, and order items.
 - Added pytest API automation for health check, authentication, products, cart, orders, unauthorized access, and admin status-update validation.
 
 ---
 
 ## Interview Summary
 
-This project can be explained in interviews like this:
+ShopFlow QA Validation Suite is a full-stack e-commerce QA project created to practice real-world testing. The app includes a React frontend, Node.js/Express backend, and PostgreSQL database. The tested workflows include registration, login, product browsing, cart, checkout, order history, and admin order-status updates.
 
-“ShopFlow QA Validation Suite is a full-stack e-commerce QA project I created to practice real-world testing. The app includes a React frontend, Node.js/Express backend, and PostgreSQL database. I tested workflows like registration, login, product browsing, cart, checkout, order history, and admin order-status updates. I created manual test cases, smoke and regression checklists, Postman API tests, SQL validation queries, bug reports, release notes, and pytest automation for repeatable API checks.”
-
----
-
-## Interview Talking Points
-
-### What application did you test?
-
-I tested a small e-commerce demo application called ShopFlow. It has customer workflows such as registration, login, product browsing, cart, checkout, and order history, plus an admin workflow to view orders and update order status.
-
-### What types of testing did you perform?
-
-I performed manual testing, functional testing, UI testing, API testing, SQL/database validation, smoke testing, regression testing, negative testing, and basic pytest API automation.
-
-### How did you use Postman?
-
-I used Postman to test backend APIs such as authentication, products, cart, orders, and admin order status. I also used environment variables for base URL, customer token, admin token, product ID, cart item ID, and order ID.
-
-### How did you validate data using SQL?
-
-I used SQL queries to confirm that user registration, cart items, order creation, order_items, and admin status updates were correctly saved in PostgreSQL.
-
-### What did you automate using pytest?
-
-I automated repeatable API checks such as health check, login, product list, product details, add to cart, checkout, order history, unauthorized access, and admin status update.
-
-### What bugs did you document?
-
-I documented realistic bugs such as cart total mismatch, unclear duplicate email error, checkout allowed with empty cart, order history not refreshing, and API success response while order_items were missing in the database.
-
-### Why is this project relevant to QA roles?
-
-This project is relevant because it shows the full QA process across a real app: understanding requirements, writing test cases, executing UI/API/database tests, reporting bugs clearly, running regression checks, and adding basic automation.
+The project demonstrates manual testing, API testing, SQL validation, bug reporting, smoke testing, regression testing, and pytest API automation. It shows the ability to understand requirements, design test cases, validate backend data, test protected APIs, document defects, and support regression testing with automation.
 
 ---
 
@@ -722,10 +695,26 @@ VITE_API_URL=http://localhost:5000/api
 
 ### Postman variables not working
 
-Make sure the environment file is imported and selected:
+Make sure the environment file is imported and selected.
 
 ```text
 ShopFlow Local Environment
+```
+
+### pytest route not found error
+
+Make sure `BASE_URL` includes `/api`.
+
+Correct:
+
+```text
+https://shopflow-qa-backend.onrender.com/api
+```
+
+Wrong:
+
+```text
+https://shopflow-qa-backend.onrender.com
 ```
 
 ### pytest import error
@@ -748,11 +737,8 @@ ShopFlow QA Validation Suite is a full-stack QA portfolio project built around a
 ## Project Status
 
 ```text
-Status: Completed for local QA portfolio use
+Status: Completed and deployed
 Purpose: Resume, GitHub portfolio, and interview demonstration
 Target Roles: Junior QA Engineer, QA Tester, Software Tester, Manual QA Tester, Software QA Engineer, Junior QA Automation Engineer
 ```
-
-```
-
-```
+````
